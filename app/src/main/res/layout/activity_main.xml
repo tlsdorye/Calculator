@@ -9,11 +9,11 @@
         android:id="@+id/textDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right|center_vertical"
+        android:gravity="right|center_vertical"
         android:singleLine="true"
-        android:hint="수식 또는 결과를 표시합니다"
+        android:hint="수식 또는 결과를 표시합니다."
         android:padding="4dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,37 +26,43 @@
             android:layout_weight="2"
             android:onClick="mOnClick"
             android:text="Advanced"
-            android:textAppearance="?android:textAppearanceSmall"
-            />
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
 
         <Button
             android:id="@+id/btnPer"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="%"/>
+            android:layout_weight="1"
+            android:text="%"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
 
         <Button
             android:id="@+id/btnPow"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="^"/>
+            android:layout_weight="1"
+            android:text="^"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
 
         <Button
             android:id="@+id/btnDel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:enabled="false"
             android:onClick="mOnClick"
             android:text="Delete"
-            android:textAppearance="?android:textAppearanceSmall"/>
-
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
         <Button
             android:id="@+id/btn7"
             android:layout_width="0dp"
@@ -65,6 +71,7 @@
             android:onClick="mOnClick"
             android:text="7"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btn8"
             android:layout_width="0dp"
@@ -73,6 +80,7 @@
             android:onClick="mOnClick"
             android:text="8"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btn9"
             android:layout_width="0dp"
@@ -81,6 +89,7 @@
             android:onClick="mOnClick"
             android:text="9"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btnDiv"
             android:layout_width="0dp"
@@ -89,12 +98,14 @@
             android:onClick="mOnClick"
             android:text="/"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
         <Button
             android:id="@+id/btn4"
             android:layout_width="0dp"
@@ -103,6 +114,7 @@
             android:onClick="mOnClick"
             android:text="4"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btn5"
             android:layout_width="0dp"
@@ -111,6 +123,7 @@
             android:onClick="mOnClick"
             android:text="5"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btn6"
             android:layout_width="0dp"
@@ -119,6 +132,7 @@
             android:onClick="mOnClick"
             android:text="6"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btnMul"
             android:layout_width="0dp"
@@ -127,12 +141,14 @@
             android:onClick="mOnClick"
             android:text="*"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
         <Button
             android:id="@+id/btn1"
             android:layout_width="0dp"
@@ -141,6 +157,7 @@
             android:onClick="mOnClick"
             android:text="1"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btn2"
             android:layout_width="0dp"
@@ -149,6 +166,7 @@
             android:onClick="mOnClick"
             android:text="2"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btn3"
             android:layout_width="0dp"
@@ -157,6 +175,7 @@
             android:onClick="mOnClick"
             android:text="3"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btnSub"
             android:layout_width="0dp"
@@ -165,12 +184,14 @@
             android:onClick="mOnClick"
             android:text="-"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
         <Button
             android:id="@+id/btn0"
             android:layout_width="0dp"
@@ -179,6 +200,7 @@
             android:onClick="mOnClick"
             android:text="0"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btnDot"
             android:layout_width="0dp"
@@ -187,6 +209,7 @@
             android:onClick="mOnClick"
             android:text="."
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btnEql"
             android:layout_width="0dp"
@@ -195,6 +218,7 @@
             android:onClick="mOnClick"
             android:text="="
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
@@ -203,6 +227,7 @@
             android:onClick="mOnClick"
             android:text="+"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
     </LinearLayout>
 
 </LinearLayout>
