@@ -89,11 +89,11 @@ public class MainActivity extends AppCompatActivity {
                 mMathExpr.append("%"); break;
             case R.id.btnPow:
                 mMathExpr.append("^"); break;
-            case R.id.btnEql:
+            case R.id.btnDel:
                 if(mMathExpr.length() > 0)
                     mMathExpr.deleteCharAt(mMathExpr.length() - 1);
                 break;
-            case R.id.btnDel:
+            case R.id.btnEql:
                 if(mMathExpr.length() == 0)
                     return;
                 String result = NumCalc.calc(mMathExpr.toString());
